@@ -19,7 +19,6 @@ HTTP caching and Content Delivery Networks (CDN)
 
 HTTP caching occurs when a browser saves the sessions of users browsing the internet.  If a browser uses a local cache then it avoides the HTTP request.
 
-
 CDN keeps sites secured with updated TLS/SSL certificates ensuring that authentication, encryption and integrity is maintained. CDN cuts down bandwidth.
 
 2.  (E)
