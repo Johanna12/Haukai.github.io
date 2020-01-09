@@ -103,12 +103,12 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
  <div class="container">
  <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators" role="list">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-inner" role="listbox" aria-labelledby="listbox1label>
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" >
 		 <img src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of poached salmon" style="width:100%;">
@@ -183,7 +183,7 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
 		 <p>Offering a selection of Maori and New Zealand European cuisine, our recipes are unmatched. See our Menu below.</p>
 		 <hr>
 		 
-		<h1 class = "text-primary">Menu</h1><br>
+		<h2 class = "text-primary">Menu</h2><br>
 		
 		 <h3 class = "text-primary">APPETIZERS</h3><br>
 		<p class = "text-secondary" >REWENA BREAD  <span class="price">10</span></p>
@@ -206,165 +206,170 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
 
 <h3 class = "text-primary">BEVERAGES</h3>
 <br>
+
+
+
 <table style="width:100%">
   <tr>
-    <th class="text-secondary">RED</th>
-	<th><span class="price">B/G</span></th>
-    <th class="text-secondary">NON ALCOHOLIC</th> 
-	<th><span class="price">B/G</span></th>
+    <th class="text-secondary" id="b1" rowspan="1">RED</th>
+	<th id="b2" colspan="1"><span class="price">B/G</span></th>
+    <th id="b3" colspan="1" class="text-secondary">NON ALCOHOLIC</th> 
+	<th id="b4" colspan="1"><span class="price">B/G</span></th>
+	
 	
     
   </tr>
   <tr>
-    <td>Terrace Edge Pinot Noir, 2012, Wairarapa</td>
-    <td><span class="price">53/13</span></td>
-	<td>Mineral water</td>
-	<td><span class="price">4.00</span></td>
+    <td id="terrace" headers="b1">Terrace Edge Pinot Noir, 2012, Wairarapa</td>
+    <td id="53/13" headers="b2"><span class="price">53/13</span></td>
+	<td id="water" headers="b3">Mineral water</td>
+	<td id="price2" headers="b4"><span class="price">4.00</span></td>
+   </tr>
+   
+   <tr>
+    <td id="altitude" headers="b1">Altitude Pinot Noir, 2010, Marlborough</td>
+    <td id="price3" headers="b2"><span class="price">64/15</span></td>
+	<td id="drinks" headers="b3">Soft drinks</td>
+	<td id="price4" headers="b4"><span class="price">4.00</span></td>
    </tr>
    <tr>
-    <td>Altitude Pinot Noir, 2010, Marlborough</td>
-    <td><span class="price">64/15</span></td>
-	<td>Soft drinks</td>
-	<td><span class="price">4.00</span></td>
+   <td id="grey" headers="b1">Greystone Pinot Noir, 2012, Wairarapa</td>
+    <td id="price5" headers="b2"><span class="price">73/17</span></td>
+	<td id="juice" headers="b3">Juice</td>
+	<td id="price6" headers="b4"><span class="price">4.00</span></td>
    </tr>
    <tr>
-   <td>Greystone Pinot Noir, 2012, Wairarapa</td>
-    <td><span class="price">73/17</span></td>
-	<td>Juice</td>
-	<td><span class="price">4.00</span></td>
+    <td id="terrace1" headers="b1">Terrace Edge, Syrah, 2012 Wairarapa</td>
+    <td id="price7" headers="b2"><span class="price">53/13</span></td>
+	<td id="coffee" headers="b3">Coffee</td>
+	<td id="price8" headers="b4"><span class="price">4.50</span></td>
    </tr>
    <tr>
-    <td>Terrace Edge, Syrah, 2012 Wairarapa</td>
-    <td><span class="price">53/13</span></td>
-	<td>Coffee</td>
-	<td><span class="price">4.50</span></td>
+    <td id="pegasus" headers="b1">Pegasus Bay Merlot, 2013, Waipara</td>
+    <td id="price9" headers="b2"><span class="price">53/13</span></td>
+	<td id="price61" headers="b3"></td>
+	<td id="price62" headers="b4"></td>
    </tr>
    <tr>
-    <td>Pegasus Bay Merlot, 2013, Waipara</td>
-    <td><span class="price">53/13</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   <tr>
-    <td>Pegasus Bay Pinot Noir, 2013, Waipara</td>
-    <td><span class="price">110</span></td>
-	<td></td>
-	<td></td>
+    <td id="pegasus1" headers="b1">Pegasus Bay Pinot Noir, 2013, Waipara</td>
+    <td id="price10" headers="b2"><span class="price">110</span></td>
+	<td id="price59" headers="b3"></td>
+	<td id="price60" headers="b4"></td>
    </tr> 
   
     <tr>
-    <th class="text-secondary">WHITE</th>
-	<th></th>
-	<th></th>
-	<th></th>	
+    <th id="white" headers="b1" class="text-secondary">WHITE</th>
+	<th id="price56" headers="b2"></th>
+	<th id="price57" headers="b3"></th>
+	<th id="price58" headers="b4"></th>	
    </tr>
    
     <tr>
-    <td>Spade Oak Pinot Gris, 2011, Gisborne</td>
-    <td><span class="price">40/10</span></td>
-	<td></td>
-	<td></td>
+    <td id="spade">Spade Oak Pinot Gris, 2011, Gisborne</td>
+    <td id="price11"><span class="price">40/10</span></td>
+	<td id="price54"></td>
+	<td id="price55"></td>
    </tr>
    <tr>
-    <td>Maude Pinot Gris, 2017, Otago</td>
-    <td><span class="price">49.50/11</span></td>
+    <td id="maude" headers="b1">Maude Pinot Gris, 2017, Otago</td>
+    <td id="price12" headers="b2"><span class="price">49.50/11</span></td>
 	<td></td>
 	<td></td>
    </tr>
    
    <tr>
-    <td>Charles Wiffen Chardonnay, 2013, Otago</td>
-    <td><span class="price">48/11</span></td>
-	<td></td>
-	<td></td>
+    <td id="charles" headers="b1">Charles Wiffen Chardonnay, 2013, Otago</td>
+    <td id="price13" headers="b2"><span class="price">48/11</span></td>
+	<td id="price52" headers="b3"></td>
+	<td id="price53" headers="b4"></td>
    </tr>
    <tr>
-    <td>Amisfield, Riesling, 2016, Otago</td>
-    <td><span class="price">53/12</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   
-    <tr>
-    <td>Lamont Riesling, 2010, Otago</td>
-    <td><span class="price">57/13</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   <tr>
-    <td>Elephant Hill Viognier, 2013, Hawkes Bay</td>
-    <td><span class="price">55/12</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   
-   
-    <tr>
-    <td>Folium Sauvignon Blanc, 2011, Marlborough</td>
-    <td><span class="price">52/11</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   <tr>
-    <td>Billecart-Salmon Brut Reserve, France</td>
-    <td><span class="price">120</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   
-   
-   <tr>
-    <th class="text-secondary">BEER AND CIDER</th>
-   <th></th>
-	<th></th>
-	<th></th>	
+    <td id="amisfield" headers="b1">Amisfield, Riesling, 2016, Otago</td>
+    <td id="price14" headers="b2"><span class="price">53/12</span></td>
+	<td id="price50" headers="b3"></td>
+	<td id="price51" headers="b4"></td>
    </tr>
    
     <tr>
-    <td>Garage project range </td>
-    <td><span class="price">11</span></td>
-	<td></td>
-	<td></td>
+    <td id="lamont" headers="b1">Lamont Riesling, 2010, Otago</td>
+    <td id="price15" headers="b2"><span class="price">57/13</span></td>
+	<td id="price48" headers="b3"></td>
+	<td id="price49" headers="b4"></td>
    </tr>
    <tr>
-    <td>Tuatara range</td>
-    <td><span class="price">11</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   
-   <tr>
-    <td>Panhead range</td>
-    <td><span class="price">10</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   <tr>
-    <td>Coopers Ale</td>
-    <td><span class="price">10</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   
-    <tr>
-    <td>Heineken</td>
-    <td><span class="price">11</span></td>
-	<td></td>
-	<td></td>
-   </tr>
-   <tr>
-    <td>Moa Cider</td>
-    <td><span class="price">10</span></td>
-	<td></td>
-	<td></td>
+    <td id="elephant" headers="b1">Elephant Hill Viognier, 2013, Hawkes Bay</td>
+    <td id="price16" headers="b2"><span class="price">55/12</span></td>
+	<td id="price46" headers="b3"></td>
+	<td id="price47" headers="b4"></td>
    </tr>
    
    
     <tr>
-    <td>Crooked Cider</td>
-    <td><span class="price">10</span></td>
+    <td id="folium" headers="b1">Folium Sauvignon Blanc, 2011, Marlborough</td>
+    <td id="price17" headers="b2"><span class="price">52/11</span></td>
+	<td id="price44" headers="b3"></td>
+	<td id="price45" headers="b4"></td>
+   </tr>
+   <tr>
+    <td id="salmon" headers="b1">Billecart-Salmon Brut Reserve, France</td>
+    <td id="price18" headers="b2"><span class="price">120</span></td>
+	<td id="price42" headers="b3"></td>
+	<td id="price43" headers="b4"></td>
+   </tr>
+   
+   
+   <tr>
+    <th id="beer" headers="b1" class="text-secondary">BEER AND CIDER</th>
+   <th id="price39" headers="b2"></th>
+	<th id="price40" headers="b3"></th>
+	<th id="price41" headers="b4"></th>	
+   </tr>
+   
+    <tr>
+    <td id="garage" headers="b1">Garage project range </td>
+    <td id="price19" headers="b2"><span class="price">11</span></td>
+	<td id="price37" headers="b3"></td>
+	<td id="price38" headers="b4"></td>
+   </tr>
+   <tr>
+    <td id="price20" headers="b1">Tuatara range</td>
+    <td id="price21" headers="b2"><span class="price">11</span></td>
+	<td id="price35" headers="b3"></td>
+	<td id="price36" headers="b4"></td>
+   </tr>
+   
+   <tr>
+    <td id="panhead" headers="b1">Panhead range</td>
+    <td id="price22" headers="b2"><span class="price">10</span></td>
 	<td></td>
 	<td></td>
+   </tr>
+   <tr>
+    <td id="coopers" headers="b1">Coopers Ale</td>
+    <td id="price23" headers="b2"><span class="price">10</span></td>
+	<td id="price33" headers="b3"></td>
+	<td id="price34" headers="b4"></td>
+   </tr>
+   
+    <tr>
+    <td id="heineken" headers="b1">Heineken</td>
+    <td id="price24" headers="b2"><span class="price">11</span></td>
+	<td id="price31" headers="b3"></td>
+	<td id="price32" headers="b4"></td>
+   </tr>
+   <tr>
+    <td id="moa" headers="b1">Moa Cider</td>
+    <td id="price25" headers="b2"><span class="price">10</span></td>
+	<td id="price27" headers="b3"></td>
+	<td id="price28" headers="b4"></td>
+   </tr>
+   
+   
+    <tr>
+    <td id="crooked" headers="b1">Crooked Cider</td>
+    <td id="price26" headers="b2"><span class="price">10</span></td>
+	<td id="price29" headers="b3"></td>
+	<td id="price30" headers="b4"></td>
    </tr>
    
  
@@ -406,7 +411,7 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
       <div class="col-md-3 mx-auto">
 
        <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Forms</h5>
+        <h4 class="font-weight-bold text-uppercase mt-3 mb-4">Forms</h4>
 
         <ul class="list-unstyled">
           <li>
@@ -429,7 +434,7 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Map</h5>
+        <p class="font-weight-bold text-uppercase mt-3 mb-4">Map</p>
 
         <ul class="list-unstyled">
 		<li>
@@ -467,7 +472,7 @@ span.price { color:#FF0000;font-weight:bold;font-family:Tahoma;font-size:20px}
       <div class="col-md-3 mx-auto">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Site Map</h5>
+        <p class="font-weight-bold text-uppercase mt-3 mb-4">Site Map</p>
 
         <ul class="list-unstyled">
           <li>
