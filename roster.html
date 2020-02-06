@@ -9,36 +9,30 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Roster</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-  
- 
-  
-  
+<script language = "javascript">
+<!-- hide
+var password;
+var pass1="12345";
+password=prompt('Enter Password To View Page',' ');
+if (password==pass1)
+alert('Correct password, click OK to enter.');
+else
+{
+window.location="https://www.openpolytechnic.ac.nz";
+}
+//-->
+</script>
   
   <style>
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 3.75px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-  
-  
-  .footer {
+     
+   .footer {
   position:static;
   left: 0;
   bottom: 0;
@@ -47,24 +41,53 @@
   color: white;
   text-align: center;
 }
- 
 
 
-</style>
+ table {
+  width: 100%;
+}
 
+table, th, td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+tr:hover{
+  background: blue;
+}
+
+tr:nth-child(1){
+  background: red;
+  font-weight: bold;
+}
+
+th, td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+  
+  </style>
+  
 </head>
 
 <body>
 
- 
-
-  <!-- Navigation -->
+ <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-white bg-white fixed-top">  <!-- Change the color bar here (dark for grey, or blue for blue white) -->
     <div class="container">
-        
-        
-        
-      <a class="navbar-brand" href="Home.html" >The Haukai Restaurant</a>
+      <a class="navbar-brand" href="Home.html">The Haukai Restaurant</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -84,117 +107,196 @@
           </li>
 		  
 		  
+		  
 		  <li class="nav-item">
+		 
             <a class="nav-link" href="menu.html">Menu</a>
           </li>
-		  
-		  <li class="nav-item">
+          
+            <li class="nav-item">
             <a class="nav-link" href="reservations.html">Reservations</a>
-          </li>          
-         
-		 <li class="nav-item">
+          </li>  
+			
+			<li class="nav-item">
             <a class="nav-link" href="map.html">Map</a>
-          </li> 
+          </li>  
+
+			<li class="nav-item">
+            <a class="nav-link" href="roster.html">Roster</a>
+          </li>  
 		  
 		  <li class="nav-item">
-            <a class="nav-link" href="roster.html">Roster</a>
-          </li>
-    </ul>
-	</div>
-	</div>
+            <a class="nav-link" href="staff.html">Staff</a>
+          </li>  
+		  
+        </ul>
+      </div> 
+    </div>
   </nav>
-  
 
 
-  
 
   <!-- Page Content -->
   <div class="container">
-  <header>
-  <div role="img" aria-label="Customers inside a restaurant">
-    <img src="Images/photo-1567304107177-611e274b1bb8.jpg" alt="Photo during the day of The Haukai restaurant with wooden tables, glass open doors and hanging green pot plants" style="width:100%;">
-  </div>
-  
-  </header>
-<br>
-    <h1 class="text-primary">Welcome to The Haukai Restaurant</h1>
-	<br>
 
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Roster
+      <small>Schedule</small>
+    </h1>
 
-    
-    
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="Home.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Roster</li>
+    </ol>
 
-    <!-- Features Section -->
+   
+
+    <!-- Content Row -->
     <div class="row">
-      <div class="col-lg-12">
-      
-       
-        <p>Welcome to our restaurant! Whether you are a local, a tourist, a business traveller, we know that you need to find a good restaurant to meet and greet clients.  
-		
-		Why not pop in to our restaurant in Kerikeri and taste our unique cuisine of <em><strong>Maori-style foods</strong></em> mixed with New Zealand European recipes? </p>
-		<p>We are the only restaurant that offers Maori kai in the Far North.  Since we are successful in offering local cuisine, some tourist companies have included in their travel packages a visit to our restaurant. </p>
-		
-		<p>We invite you to join us for a meal and enjoy an experience dining with us and others at the Haukai Restaurant.  Our website offers many features to help you see why we are a restaurant that offers 
-		
-		more than just a regular restaurant meal.  Our application includes the following features:</p>
-		
+      <!-- Map Column -->
+	  
+      <div class="col-lg-12 mb-4">
+        <!-- Embedded Google Map -->
+		 <h1></h1> 
+		 <p>All staff are expected to attend the day they rostered to work on.  If you are unable to work on the assigned day, please call Cindy or Pip on 0800 532 8756 as early as possible.  Thank you.</p>
+		 <br>
+		 
+		 <table>
+  <h2></h2>
+<!--   This is my first row of data -->
+  <tr>
+    <th>No.</th>
+    <th>Name</th>
+    	<th>Full-time/Part-time</th>
+    <th>Position</th>
+    <th>Days On</th>
+    <th>Hours</th>
+    <th>Days Off</th>
+  </tr>
+  <tr>
+  <td>3 </td>
+  <td> <a href="staff.html">Armin Plane</a></td>
+  <td>Full-time  </td>
+  <td>I.T Developer </td>
+  <td>Monday - Sunday </td>
+  <td>8:30 AM to 5:00 PM </td>
+  <td>Available a/hours</td>
+</tr>
+<tr>
+  <td>13 </td>
+  <td><a href="staff.html">Lester Keene  </td>
+  <td>Full-time  </td>
+  <td>Chef</td>
+  <td>Wednesday to Sunday</td>
+  <td>5:00 PM to 1:00 PM</td>
+  <td>Monday, Tuesday</td>
+</tr>
+<tr>
+  <td>6 </td>
+  <td><a href="staff.html">Michael Moran </td>
+  <td>Full-time  </td>
+  <td>Chef </td>
+  <td>Friday -Tuesday  </td>
+  <td>5:00 PM to 1:00 PM </td>
+  <td>Wednesday, Thursday</td>
+</tr>
+<tr>
+  <td>1 </td>
+  <td><a href="staff.html">Peter Henare</td>
+  <td>Full-time  </td>
+  <td>Business Owner </td>
+  <td>Wednesday to Sunday </td>
+  <td>4:00 PM to 12:00 PM </td>
+  <td>Saturday to Tuesday</td>
+</tr>
+<tr>
+  <td>2  </td>
+  <td><a href="staff.html">Hanna Josef </td>
+  <td>Full-time  </td>
+  <td>Business Owner </td>
+  <td>Wednesday to Sunday </td>
+  <td>4:00 PM to 12:00 PM </td>
+  <td>Saturday to Tuesday</td>
+</tr>
+<tr>
+  <td>7  </td>
+  <td><a href="staff.html">Cindy Stevens </td>
+  <td>Full-time  </td>
+  <td>Administration Manager </td>
+  <td>Monday to Friday </td>
+  <td>8:30 AM to 5:00 PM  </td>
+  <td>Saturday, Sunday</td>
+</tr>
+<tr>
+  <td>8  </td>
+  <td><a href="staff.html">Pip Johnson  </td>
+  <td>Part-time </td>
+  <td>Secretary </td>
+  <td>Monday to Friday </td>
+  <td>9:00 AM to 3:00 PM </td>
+  <td>Saturday, Sunday</td>
+</tr>
+<tr>
+  <td>9  </td>
+  <td><a href="staff.html">Mindy Weatherford  </td>
+  <td>Full-time </td>
+  <td>Waitress  </td>
+  <td>Wednesday to Sunday </td>
+  <td>5:00 PM to 1:00 AM </td>
+  <td>Monday, Tuesday</td>
+</tr>
+<tr>
+  <td>10  </td>
+  <td><a href="staff.html">Tame Stephens  </td>
+  <td>Full-time  </td>
+  <td>Waiter </td>
+  <td>Wednesday to Sunday </td>
+  <td>5:00 PM to 1:00 AM </td>
+  <td>Monday, Tuesday</td>
+</tr>
+<tr>
+  <td>11  </td>
+  <td><a href="staff.html">Grant Weatherford </td>
+  <td>Full-time  </td>
+  <td>Waiter </td>
+  <td>Friday-Tuesday </td>
+  <td>5:00 PM to 1:00 PM </td>
+  <td>Wednesday, Thursday</td>
+</tr>
+  <td>12  </td>
+  <td><a href="staff.html">Jacqueline Taylor  </td>
+  <td>Full-time </td>
+  <td>Waitress</td>
+  <td>Friday-Tuesday</td>
+  <td>5:00 PM to 1:00 PM </td>
+  <td>Wednesday, Thursday</td>
+</tr>
 
-        <ul>
-          <li>A reservation form to reserve a table or tables at our restaurant.</li>
-          <li>A Google map with directions for you to find us.</li>
-          <li>A contact form to submit any enquiries you might have about our cuisine, location or the restaurant.</li>
-          <li>A photo gallery in which you can upload a photo of your time here at the restaurant.</li> 
-          <li>Prayers and songs that you can download to learn the karakia and songs that will be sung at the restaurant.</li>
-		  <li>Special Events page to find out when you can be part of a Hangi.</li>
-		  <li>A video of the restaurant owners to tell you more about their background and the successes of their previous restaurants and their hopes for The Haukai Restaurant.</li>
-        </ul>
-
-      
-      <div class="col-lg-6">
-       <div role="img" aria-label="Plate of salmon being served to a customer">
-    <img class="img-fluid rounded" src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of the restaurant with a plate of salmon" height="700" width="450">
-	</div>
-
-
-	 	
-		
-      </div>
-	  </div>
+</table>
+<br>
+<br>
+<hr>
+	
     </div>
-    <!-- row -->
-
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>We can't wait any longer! Make a reservation now and experience the local cuisine of Maori and New Zealand European recipes.  Thank you for your time and have a great day!</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-primary btn-block"  href="reservations.html">Make a Reservation</a>
-      </div>
-    </div>
+    <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
-  
 
-  <!-- Bootstrap core JavaScript -->
+  
+ 
+
+ <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
-  
-  
-  
-
-      
 
   
 
-
-  
-  <!-- Footer -->
+<!-- Footer -->
 <footer class="footer">
 
   <!-- Footer Links -->
@@ -253,7 +355,7 @@
         <ul class="list-unstyled">
          
           <li>
-            <a href="contact.html">Contact us</a>
+            <a href="contact.html">Contact</a>
           </li>
           
         </ul>
@@ -309,10 +411,7 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-         
-		  
-		  <img src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of salmon on white plate with wine glasses on a brown table" class="img-fluid">
-			
+         <img src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of salmon on white plate with wine glasses on a brown table" class="img-fluid">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -326,8 +425,8 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-           <img src="Images/toa-heftiba-U_zIfKfEoRM-unsplash.jpg" alt="photo of 3 tier pudding" class="img-fluid">
-			
+        <img src="Images/toa-heftiba-U_zIfKfEoRM-unsplash.jpg" alt="photo of 3 tier pudding" class="img-fluid">
+           
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -341,7 +440,7 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src= "Images/kate-remmer-RZn4_FzNUCY-unsplash.jpg" alt="photo of bread" class="img-fluid">
+           <img src= "Images/kate-remmer-RZn4_FzNUCY-unsplash.jpg" alt="photo of bread" class="img-fluid">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -383,10 +482,8 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src="Images/nils-stahl-BCkLxilDvJU-wine.jpg" alt="photo of glasses filled with white wine lined in a row on a brown table" class="img-fluid">
-			
-			
-			
+         <img src="Images/nils-stahl-BCkLxilDvJU-wine.jpg" alt="photo of glasses filled with white wine lined in a row on a brown table" class="img-fluid">
+		
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -407,12 +504,10 @@
   </div>
   <!-- Copyright -->
 
-	</footer>
+</footer>
 <!-- Footer -->
   
 
 </body>
-
-
 
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Staff details</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,27 +17,10 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
   
+
+
+ <style>
  
-  
-  
-  
-  <style>
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 3.75px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-  
-  
   .footer {
   position:static;
   left: 0;
@@ -48,23 +31,51 @@
   text-align: center;
 }
  
+ 
+ table {
+  width: 100%;
+}
 
+table, th, td {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+tr:hover{
+  background: blue;
+}
+
+tr:nth-child(1){
+  background: red;
+  font-weight: bold;
+}
+
+th, td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+th:nth-child(1), td:nth-child(1) {
+  text-align: right;
+  padding-right: 10px;
+}
 
 </style>
+
 
 </head>
 
 <body>
-
- 
-
-  <!-- Navigation -->
+ <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-white bg-white fixed-top">  <!-- Change the color bar here (dark for grey, or blue for blue white) -->
     <div class="container">
-        
-        
-        
-      <a class="navbar-brand" href="Home.html" >The Haukai Restaurant</a>
+      <a class="navbar-brand" href="Home.html">The Haukai Restaurant</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -84,117 +95,204 @@
           </li>
 		  
 		  
-		  <li class="nav-item">
-            <a class="nav-link" href="menu.html">Menu</a>
-          </li>
 		  
 		  <li class="nav-item">
+		 
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          
+            <li class="nav-item">
             <a class="nav-link" href="reservations.html">Reservations</a>
-          </li>          
-         
-		 <li class="nav-item">
+          </li>  
+			
+			<li class="nav-item">
             <a class="nav-link" href="map.html">Map</a>
-          </li> 
+          </li>  
 		  
 		  <li class="nav-item">
             <a class="nav-link" href="roster.html">Roster</a>
-          </li>
-    </ul>
-	</div>
-	</div>
+          </li>  
+		  
+		  <li class="nav-item">
+            <a class="nav-link" href="staff.html">Staff</a>
+          </li>  
+
+		  
+        </ul>
+      </div> 
+    </div>
   </nav>
-  
 
 
-  
 
   <!-- Page Content -->
   <div class="container">
-  <header>
-  <div role="img" aria-label="Customers inside a restaurant">
-    <img src="Images/photo-1567304107177-611e274b1bb8.jpg" alt="Photo during the day of The Haukai restaurant with wooden tables, glass open doors and hanging green pot plants" style="width:100%;">
-  </div>
-  
-  </header>
-<br>
-    <h1 class="text-primary">Welcome to The Haukai Restaurant</h1>
-	<br>
 
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Staff
+      <small>Contact Details</small>
+    </h1>
 
-    
-    
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="Home.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Staff</li>
+    </ol>
 
-    <!-- Features Section -->
+   
+
+    <!-- Content Row -->
     <div class="row">
-      <div class="col-lg-12">
-      
-       
-        <p>Welcome to our restaurant! Whether you are a local, a tourist, a business traveller, we know that you need to find a good restaurant to meet and greet clients.  
-		
-		Why not pop in to our restaurant in Kerikeri and taste our unique cuisine of <em><strong>Maori-style foods</strong></em> mixed with New Zealand European recipes? </p>
-		<p>We are the only restaurant that offers Maori kai in the Far North.  Since we are successful in offering local cuisine, some tourist companies have included in their travel packages a visit to our restaurant. </p>
-		
-		<p>We invite you to join us for a meal and enjoy an experience dining with us and others at the Haukai Restaurant.  Our website offers many features to help you see why we are a restaurant that offers 
-		
-		more than just a regular restaurant meal.  Our application includes the following features:</p>
-		
-
-        <ul>
-          <li>A reservation form to reserve a table or tables at our restaurant.</li>
-          <li>A Google map with directions for you to find us.</li>
-          <li>A contact form to submit any enquiries you might have about our cuisine, location or the restaurant.</li>
-          <li>A photo gallery in which you can upload a photo of your time here at the restaurant.</li> 
-          <li>Prayers and songs that you can download to learn the karakia and songs that will be sung at the restaurant.</li>
-		  <li>Special Events page to find out when you can be part of a Hangi.</li>
-		  <li>A video of the restaurant owners to tell you more about their background and the successes of their previous restaurants and their hopes for The Haukai Restaurant.</li>
-        </ul>
-
-      
-      <div class="col-lg-6">
-       <div role="img" aria-label="Plate of salmon being served to a customer">
-    <img class="img-fluid rounded" src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of the restaurant with a plate of salmon" height="700" width="450">
-	</div>
+      <!-- Map Column -->
+	  
+      <div class="col-lg-12 mb-4">
+        <!-- Embedded Google Map -->
+		 <h1>Staff</h1> 
+		 <p>All staff are expected to provide their address, phone and email details.  Please call Mindy on 0800 532 8756 when there is a change of your contact details.  Thank you.</p>
+		 <br>
+		 
 
 
-	 	
-		
-      </div>
-	  </div>
+<table>
+  <h2></h2>
+<!--   This is my first row of data -->
+  <tr>
+    <th>Staff ID</th>
+    <th>Name</th>
+    	<th>Email Address</th>
+    <th>Phone Number</th>
+    <th>Mobile Number</th>
+    <th>Address</th>
+    <th>Postal Code</th>
+  </tr>
+  <tr>
+  <td>1 </td>
+  <td>Peter Henare</td>
+  <td>peter@haukai.co.nz </td>
+  <td>(09) 431-9876 </td>
+  <td>(021) 234-1218 </td>
+  <td>29 Truman Road, Kerikeri </td>
+  <td>4109</td>
+</tr>
+<tr>
+  <td>2 </td>
+  <td>Hanna Josef</td>
+  <td>hanna@haukai.co.nz </td>
+  <td>(09) 431-9876 </td>
+  <td>(021) 234-1285 </td>
+  <td>19 Truman Road, Kerikeri </td>
+  <td>4109</td>
+</tr>
+<tr>
+  <td>3 </td>
+  <td>Armin Plane </td>
+  <td>armin@haukai.co.nz </td>
+  <td>(09) 430-7823 </td>
+  <td>(021) 899-0011  </td>
+  <td>188 Bella Vue Place, Kerikeri</td>
+  <td>4109</td>
+</tr>
+<tr>
+  <td>6 </td>
+  <td>Michael Moran  </td>
+  <td>michael@haukai.co.nz  </td>
+  <td>(09) 231-2310 </td>
+  <td>(022) 902-3519 </td>
+  <td>2/456 Philp Road, Kerikeri </td>
+  <td>4107</td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td>Cindy Stevens </td>
+  <td>cindy@haukai.co.nz</td>
+  <td>(09) 433-2197 </td>
+  <td>(021) 786-4530 </td>
+  <td>10 Belle Road, Paihia </td>
+  <td>3901</td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td>Pip Johnson</td>
+  <td>pip@haukai.co.nz</td>
+  <td>(09) 231-2310 </td>
+  <td>(021) 293-5198 </td>
+  <td>2/456 Philp Road, Kerikeri </td>
+  <td>4107</td>
+</tr>
+
+<tr>
+  <td>9  </td>
+  <td>Mindy Weatherford</td>
+  <td>mindy@haukai.co.nz</td>
+  <td>(09) 354-8192</td>
+  <td>(021) 975-6438</td>
+  <td>67 Red Pill Street, Kerikeri</td>
+  <td>4390</td>
+</tr>
+<tr>
+  <td>10</td>
+  <td>Tame Stephens  </td>
+  <td>tame@haukai.co.nz  </td>
+  <td>(09) 234-5480 </td>
+  <td>(022) 349-9123 </td>
+  <td>76 Wiley Lane, Kaikahoe</td>
+  <td>4010</td>
+</tr>
+<tr>
+  <td>11  </td>
+  <td>Grant Weatherford  </td>
+  <td>grant@haukai.co.nz  </td>
+  <td>(09) 354-8192 </td>
+  <td>(022) 3490-1298 </td>
+  <td>67 Red Pill Street, Kerikeri </td>
+  <td>4390</td>
+</tr>
+<tr>
+  <td>12  </td>
+  <td>Jacqueline Taylor </td>
+  <td>jacqueline@haukai.co.nz  </td>
+  <td>(09) 432-8753 </td>
+  <td>(021) 785-2349</td>
+  <td>198 Ciero Place, Kerikeri</td>
+  <td>4109</td>
+</tr>
+<tr>
+  <td>13  </td>
+  <td>Lester Keene  </td>
+  <td>lester@haukai.co.nz </td>
+  <td>(09) 234-1234</td>
+  <td>(021) 456-7898  </td>
+  <td>22 Inland Way, Paihia</td>
+  <td>4109</td>
+</tr>
+
+</table>
+
+<br>
+<br>
+<hr>
+	
     </div>
-    <!-- row -->
-
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>We can't wait any longer! Make a reservation now and experience the local cuisine of Maori and New Zealand European recipes.  Thank you for your time and have a great day!</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-primary btn-block"  href="reservations.html">Make a Reservation</a>
-      </div>
-    </div>
+    <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
-  
 
-  <!-- Bootstrap core JavaScript -->
+  
+ 
+
+ <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
-  
-  
-  
-
-      
 
   
 
-
-  
-  <!-- Footer -->
+<!-- Footer -->
 <footer class="footer">
 
   <!-- Footer Links -->
@@ -253,7 +351,7 @@
         <ul class="list-unstyled">
          
           <li>
-            <a href="contact.html">Contact us</a>
+            <a href="contact.html">Contact</a>
           </li>
           
         </ul>
@@ -309,10 +407,7 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-         
-		  
-		  <img src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of salmon on white plate with wine glasses on a brown table" class="img-fluid">
-			
+         <img src="Images/photo-1414235077428-338989a2e8c0_food.jpg" alt="photo of salmon on white plate with wine glasses on a brown table" class="img-fluid">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -326,8 +421,8 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-           <img src="Images/toa-heftiba-U_zIfKfEoRM-unsplash.jpg" alt="photo of 3 tier pudding" class="img-fluid">
-			
+        <img src="Images/toa-heftiba-U_zIfKfEoRM-unsplash.jpg" alt="photo of 3 tier pudding" class="img-fluid">
+           
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -341,7 +436,7 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src= "Images/kate-remmer-RZn4_FzNUCY-unsplash.jpg" alt="photo of bread" class="img-fluid">
+           <img src= "Images/kate-remmer-RZn4_FzNUCY-unsplash.jpg" alt="photo of bread" class="img-fluid">
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -383,10 +478,8 @@
 
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <img src="Images/nils-stahl-BCkLxilDvJU-wine.jpg" alt="photo of glasses filled with white wine lined in a row on a brown table" class="img-fluid">
-			
-			
-			
+         <img src="Images/nils-stahl-BCkLxilDvJU-wine.jpg" alt="photo of glasses filled with white wine lined in a row on a brown table" class="img-fluid">
+		
           <a href="">
             <div class="mask rgba-white-light"></div>
           </a>
@@ -407,12 +500,10 @@
   </div>
   <!-- Copyright -->
 
-	</footer>
+</footer>
 <!-- Footer -->
   
 
 </body>
-
-
 
 </html>
